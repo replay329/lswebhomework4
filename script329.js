@@ -40,7 +40,10 @@ for (var i = 0; i < items.length; i++) {
    
 }
 
-//append photo
+
+                 
+                 
+//append photo by modifying HTML
 
 var img = document.createElement("img");
      
@@ -49,3 +52,9 @@ img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NY-329.svg/
 var src = document.getElementById("x");
      
 src.appendChild(img);
+
+//append photo with ONLY JS
+
+    var image = document.createElement('img');
+	image.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NY-329.svg/500px-NY-329.svg.png";
+document.body.appendChild(image);
